@@ -1,0 +1,27 @@
+.toolbar {
+  height: 60px;
+  width: 100%;
+  padding: 0 0 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #626d71;
+  box-shadow: 0 2px 2px #474e51;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.toolbar__tools {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.toolbar__tools:not(:last-child) {
+  margin-right: 30px;
+}
+.pointer {
+  background: url(/src/assets/img/cursor.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
