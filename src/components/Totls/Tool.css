@@ -1,0 +1,13 @@
+.tool__box {
+  display: flex;
+  gap: 15px;
+}
+.tool__box:not(:last-child) {
+  margin-bottom: 10px;
+}
+.tool__icon {
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-position: cover;
+}

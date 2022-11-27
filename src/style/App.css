@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+button {
+  background-color: none;
+}
 .app {
   display: flex;
   flex-direction: column;
@@ -10,4 +13,7 @@
   max-height: 100vh;
   width: 100vw;
   background-color: #cdcdc0;
+}
+.canvas-container {
+  overflow: hidden;
 }

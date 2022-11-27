@@ -1,0 +1,38 @@
+.tools-config {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.tools__icon {
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.arrow {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  margin: 0 auto;
+  justify-self: flex-end;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 50px;
+  gap: 7px;
+  cursor: pointer;
+}
+.toole__range {
+  text-align: center;
+}
+.color__plate {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
