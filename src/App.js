@@ -1,26 +1,22 @@
 import { useState } from "react";
 import Canvas from "./components/Canvas/Canvas";
 import ToolBar from "./components/ToolBar/ToolBar";
-import { ModalContext } from "./context";
+import modalState from "./store/modalState";
 import "./style/App.css";
 
 function App() {
-  const [modalActive, setModalActive] = useState(false);
+  const [tool, setTool] = useState();
 
   return (
-    <ModalContext.Provider
-      value={{
-        modalActive,
-        setModalActive,
-      }}
-    >
-      <div className="app">
-        <ToolBar />
-        <div className="canvas-container" onClick={() => setModalActive(false)}>
-          <Canvas />
-        </div>
+    <div className="app">
+      <ToolBar tool={tool} setTool={setTool} />
+      <div
+        className="canvas-container"
+        onClick={() => modalState.setModalClose()}
+      >
+        <Canvas />
       </div>
-    </ModalContext.Provider>
+    </div>
   );
 }
 

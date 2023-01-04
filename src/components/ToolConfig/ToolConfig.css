@@ -35,4 +35,23 @@
   width: 25px;
   height: 25px;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+#widthChange {
+  -webkit-appearance: none;
+  height: 4px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.626);
+  box-shadow: none;
+  border-radius: 30px;
+}
+#widthChange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
 }
